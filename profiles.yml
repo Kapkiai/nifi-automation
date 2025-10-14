@@ -1,6 +1,6 @@
 dev-nifi:
-  nifi_url: https://localhost:8080/nifi-api
-  registry_url: http://localhost:8443/nifi-registry-api
+  nifi_url: https://194.163.178.140:7443/nifi-api
+  registry_url: http://194.163.178.140:18080/nifi-registry-api
   nifi_user: admin
   nifi_pass: '123456789012'
   nifi_verify_ssl: false
