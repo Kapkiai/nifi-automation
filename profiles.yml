@@ -5,7 +5,7 @@ dev-nifi:
   nifi_pass: '123456789012'
   nifi_verify_ssl: false
   suppress_ssl_warnings: true
-  # nifi_auth_method: basic
+  # nifi_auth_method: basic 
   registry_auth_method: unauthenticated
 
 uat-nifi:
