@@ -4,13 +4,21 @@ from nipyapi import versioning
 import urllib3
 import json
 import time
+import sys
 
 nipyapi.config.default_profiles_file = './profiles.yml'
 
 nipyapi.profiles.switch('dev-nifi')
 
 # define the list of Process Groups
-process_groups = ["mattest"]
+process_groups = ["default"]
+
+if (len(sys.argv) > 1):
+    pg = sys.argv[1]
+    process_groups = pg.split(',')
+
+
+print(process_groups)
 
 # store exported flows
 exported_flows = {}
