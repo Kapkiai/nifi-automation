@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'docker.io/trainig/nifi-automation:0.0.1' // Specifies the Docker image to use (e.g., Python 3.9)
+            image 'python3.10' // Specifies the Docker image to use (e.g., Python 3.9)
             args '-u root' // Optional: Runs the container as root user
         }
         
