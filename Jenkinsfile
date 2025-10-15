@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'python3.10' // Specifies the Docker image to use (e.g., Python 3.9)
+            image 'python:3.10' // Specifies the Docker image to use (e.g., Python 3.9)
             args '-u root' // Optional: Runs the container as root user
         }
         
