@@ -17,14 +17,14 @@ pipeline {
                 checkout scm
             }
         }
-        stage('Instll dependencies') {
+        stage('Install dependencies') {
             steps {
                 sh 'pip install -r requirements.txt' // Executes your Python script
             }
         }
         stage('Echo parameters') {
             steps {
-                echo "${parameters.PROCESS_GROUP} - ${process_groups}"
+                echo "${params.PROCESS_GROUP} - ${process_groups}"
             }
         }
         stage('Run Python Script') {
