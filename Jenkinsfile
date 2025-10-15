@@ -12,6 +12,11 @@ pipeline {
                 checkout scm
             }
         }
+        stage('Instll dependencies') {
+            steps {
+                sh 'pip install -r requirements.txt' // Executes your Python script
+            }
+        }
         stage('Run Python Script') {
             steps {
                 sh 'python migration.py' // Executes your Python script
